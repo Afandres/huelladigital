@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'mhdpfp' => [
+        'key' => env('PLUGIN_BIOMETRIC_KEY'),        
+    ],
+
+
 ];

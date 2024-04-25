@@ -42,4 +42,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    //Relacion uno a muchos
+    public function fingerprints() {
+        return $this->hasMany("App\Models\DpfpModels\FingerPrint");
+    }
 }
